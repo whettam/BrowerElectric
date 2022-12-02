@@ -1,74 +1,156 @@
+@font-face {
+  font-family: brower;
+  src: url(../../fonts/Lucida_Handwriting_Italic.ttf);
+}
+
+/* Nav */
 header {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .navbarcolor {
-    background-color: rgb(17, 11, 97);
+  background-color: rgb(57, 55, 87);
 }
 
 .mainlinks {
-    font-weight: bold;
-    padding-right: 5%;
+  letter-spacing: 2px;
+  font-weight: bold;
+  padding-right: 5%;
+  font-size: 1em;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  background-color: #506ac0;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.logoimage {
+  width: 7%;
 }
 
 .mainlogo {
-    letter-spacing: 3px;
-    font-family:breezy;
-    font-weight: bold;
-    text-shadow: 1px 1px 1px black;
-    padding-left: 5%;
-    font-size: 2em;
+  letter-spacing: 3px;
+  font-family: brower;
+  text-shadow: 1px 1px 5px rgb(83, 94, 196);
+  padding-left: 5%;
+  font-size: 3em;
+  
 }
 
 .hamburger {
-    color: white;
-    background-color: white;
+  color: white;
+  background-color: white;
 }
 
-.bg-image {
-    height: 90vh;
-    background-image: url(/images/architecture-16911.jpg);
-    background-size: cover;
+.mainbuilding {
+  height: 90vh;
+  background-image: url(images/building.jpg);
+  background-size: cover;
 }
 
 .bannerstatement {
-    color: white;
+  color: white;
+}
+
+/* Carousel Styling */
+.carouselbg {
+  background-color: rgba(78, 80, 110, 0.95);
+  color: #fff;
+  border-radius: 10px;
+}
+
+.carousel .carousel-item {
+  transition-duration: 2s;
 }
 
 .missouri {
-    text-shadow: 2px 2px 12px rgb(35, 106, 145);
-    font-weight: 350;
+  text-shadow: 2px 2px 12px rgb(39, 96, 128);
+  font-weight: 350;
 }
 
+.cursivenames {
+  font-family: brower;
+  font-size: 1.5em;
+}
+
+.contacttext {
+  color: rgb(57, 55, 87);
+}
+
+.contacttext-info {
+  font-weight: 400;
+}
+
+.footercolor {
+  background-color:rgb(37, 36, 60);
+}
 /* Divider Line */
 .divider-custom {
-    margin: 1.25rem 0 1.5rem;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .divider-custom .divider-custom-line {
-    width: 100%;
-    max-width: 45rem;
-    height: 0.25rem;
-    background-color: #2c3e50;
-    border-radius: 1rem;
-    border-color: #2c3e50;
-  }
-  .divider-custom .divider-custom-line:first-child {
-    margin-right: 1rem;
-  }
-  .divider-custom .divider-custom-line:last-child {
-    margin-left: 1rem;
-  }
-  .divider-custom .divider-custom-icon {
-    color: #2c3e50;
-    font-size: 2rem;
-  }
-  .divider-custom.divider-light .divider-custom-line {
-    background-color: #fff;
-  }
-  .divider-custom.divider-light .divider-custom-icon {
-    color: #fff;
-  }
+  margin: 1.5rem 0 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider-custom .divider-custom-line {
+  width: 60%;
+  max-width: 45rem;
+  height: 0.20rem;
+  background-color: #2c3e50;
+  border-radius: 10px;
+  border-color: #2c3e50;
+}
+
+.divider-custom-2 {
+  margin: 1.5rem 0 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider-custom-2 .divider-custom-line-2 {
+  width: 80%;
+  max-width: 45rem;
+  height: 0.20rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border-color: #2c3e50;
+}
+
+.divider-custom-3 {
+  margin: 1.5rem 0 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider-custom-3 .divider-custom-line-3 {
+  width: 40%;
+  max-width: 45rem;
+  height: 0.20rem;
+  background-color: #2c3e50;
+  border-radius: 10px;
+  border-color: #2c3e50;
+}
+
+.divider-custom.divider-light .divider-custom-line {
+  background-color: #fff;
+}
+
+.divider-custom.divider-dark{
+  color: rgb(57, 55, 87);
+}
+
+@media only screen and (max-width: 1194px) {
+   .logoimage {
+    display: none;
+   }
+}
+
+@media only screen and (max-width: 676px) {
+  .mainlogo {
+    font-size: 1.5em;
+  } 
+  
+}
