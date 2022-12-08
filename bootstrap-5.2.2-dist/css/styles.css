@@ -17,16 +17,22 @@ header {
   font-weight: bold;
   padding-right: 5%;
   font-size: 1em;
+  text-align: center;
 }
 
 .navbar .navbar-nav .nav-link:hover {
-  background-color: #506ac0;
+  background-color: #5b76cf;
   color: #fff;
+  border-radius: 10px;
+}
+
+.nav-link {
   border-radius: 10px;
 }
 
 .logoimage {
   width: 7%;
+  border-radius: 15px;
 }
 
 .mainlogo {
@@ -35,7 +41,7 @@ header {
   text-shadow: 1px 1px 5px rgb(83, 94, 196);
   padding-left: 5%;
   font-size: 3em;
-  
+
 }
 
 .hamburger {
@@ -57,11 +63,20 @@ header {
 .carouselbg {
   background-color: rgba(78, 80, 110, 0.95);
   color: #fff;
+  height: 280px;
+  width: 800px;
   border-radius: 10px;
 }
 
 .carousel .carousel-item {
   transition-duration: 2s;
+}
+
+/* Accordion Styling */
+
+.accordion-button:not(.collapsed) {
+  color: #365079;
+  background-color: #ffffff;
 }
 
 .missouri {
@@ -83,8 +98,9 @@ header {
 }
 
 .footercolor {
-  background-color:rgb(37, 36, 60);
+  background-color: rgb(37, 36, 60);
 }
+
 /* Divider Line */
 .divider-custom {
   margin: 1.5rem 0 1.5rem;
@@ -134,23 +150,68 @@ header {
   border-color: #2c3e50;
 }
 
+.divider-custom-4 {
+  margin: 1.5rem 0 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider-custom-4 .divider-custom-line-4 {
+  width: 40%;
+  max-width: 45rem;
+  height: 0.20rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  border-color: #fff;
+}
+
 .divider-custom.divider-light .divider-custom-line {
   background-color: #fff;
 }
 
-.divider-custom.divider-dark{
+.divider-custom.divider-dark {
   color: rgb(57, 55, 87);
 }
 
 @media only screen and (max-width: 1194px) {
-   .logoimage {
+  .logoimage {
     display: none;
-   }
+  }
+}
+
+@media only screen and (min-width: 1060px) {
+  .accordmarg {
+    margin-left: 11rem;
+    margin-right: 11rem;
+  }
+}
+
+@media only screen and (min-width: 676px) {
+  .mobiletable {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 676px) {
   .mainlogo {
-    font-size: 1.5em;
-  } 
-  
+    font-size: 1em;
+  }
+  .mainbuilding {
+    height: 100vh;
+  }
+  .hamburger {
+    justify-content: center;
+  }
+  .desktoptable {
+    display:none;
+  }
+
+
+}
+
+@media only screen and (max-width:600px) {
+  .carousel {
+    display: none;
+  }
 }
