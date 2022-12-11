@@ -59,6 +59,24 @@ header {
   color: white;
 }
 
+/* About Section */
+
+.certbutton {
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 1.5em;
+  border: 4px lightblue;
+}
+
+.aboutbtn {
+  background-color: white;
+}
+
+.aboutbtn:hover {
+  color: rgb(57, 55, 87);
+  background-color: #5b76cf;
+}
+
 /* Carousel Styling */
 .carouselbg {
   background-color: rgba(78, 80, 110, 0.95);
@@ -205,6 +223,9 @@ header {
   }
   .desktoptable {
     display:none;
+  }
+  .aboutbtn {
+    font-size: 1em;
   }
 
 
