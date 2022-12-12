@@ -6755,7 +6755,7 @@ textarea.form-control-lg {
 }
 
 .link-info {
-  color: #dfec4a !important;
+  color:palegreen !important;
 }
 .link-info:hover, .link-info:focus {
   color: #3dd5f3 !important;
